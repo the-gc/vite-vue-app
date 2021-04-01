@@ -1,12 +1,14 @@
 {
   "name": "vite-vue-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
+    "ant-design-vue": "^2.1.2",
+    "normalize.css": "^8.0.1",
     "vue": "^3.0.5",
     "vue-router": "^4.0.5"
   },
