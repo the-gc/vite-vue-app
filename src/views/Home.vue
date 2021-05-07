@@ -3,8 +3,7 @@
         <v-header/>
         <v-sideMenu/>
         <div class="main-container">
-            内容
-        <router-view/>
+            <router-view/>
         </div>
     </div>
 </template>

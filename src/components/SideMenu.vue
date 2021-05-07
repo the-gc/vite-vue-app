@@ -4,7 +4,10 @@
     </aside>
 </template>
 <script>
-
+import {defineProps} from 'vue'
+defineProps({
+    config: Array
+});
 </script>
 <style scoped>
     .aside{

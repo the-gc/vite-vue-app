@@ -1,6 +1,13 @@
 <template>
-    <div>测试页面</div>
+    <v-block title="测试">
+        测试内容
+    </v-block>
 </template>
 <script>
-console.log(1111111111);
+import vBlock from '../components/Block.vue'
+export default {
+    components: {
+        'v-block': vBlock,
+    }
+}
 </script>
