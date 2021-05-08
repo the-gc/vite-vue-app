@@ -13,9 +13,23 @@ const router = createRouter({
     history: createWebHashHistory(),
     routes,
 })
+router.beforeEach((to, from, next) => {
+    // 判断当前页面是否需要登录
+    if (to.meta && to.meta.requireAuth) {
+        if (!localStorage.getItem('auth')) {
+            console.log('未登录, 跳转至登录页！');
+            next({
+                path: '/login'
+            })
+        }else {
+            next();
+        }
+    }else {
+        next();
+    }
+})
 const app = createApp(App);
 app.config.productionTip = false;
-
 // app.use(Antd);
 app.use(router);
 app.mount('#app');
