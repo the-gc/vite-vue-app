@@ -10,7 +10,8 @@ const routes = [
             requireAuth: true
         },
         children: [
-            {path: '/test', component: import('../views/test.vue')}
+            {path: 'overview', component: import('../views/Overview.vue')},
+            {path: 'test', component: import('../views/Test.vue')},
         ]
     },
 ]
