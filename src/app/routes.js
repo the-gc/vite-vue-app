@@ -6,8 +6,12 @@ const routes = [
     },
     {
         path: '/', component: import('../views/Home.vue'),
+        meta: {
+            requireAuth: true
+        },
         children: [
-            {path: '/test', component: import('../views/test.vue')}
+            {path: 'overview', component: import('../views/Overview.vue')},
+            {path: 'test', component: import('../views/Test.vue')},
         ]
     },
 ]

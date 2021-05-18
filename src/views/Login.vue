@@ -34,10 +34,13 @@ import { reactive, toRef } from 'vue'
             const onSubmit = (username, password) => {
                 if (username === '') {
                     alert('请输入用户名');
+                    return false
                 }
                 if (password === '') {
                     alert('请输入密码');
+                    return false
                 }
+                localStorage.setItem('auth', 'true');
                 window.location.href = '/'
             }
             return {
