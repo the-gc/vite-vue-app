@@ -6,7 +6,7 @@ export default [
     {
         key: '2', title: '用户管理', path: '/user', 
         children: [
-            {key: '3', title: '用户列表', path: '/user/list'}
+            {key: '3', title: '用户列表', path: '/user'}
         ]
     },
 ]

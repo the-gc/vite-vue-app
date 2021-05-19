@@ -6,9 +6,8 @@
                 <div>
                     <!-- 图标 -->
                     <span class="menu-item-icon">
-
+                        
                     </span>
-
                     <router-link v-if="!item.children" :to="item.path">{{item.title}}</router-link>
                     <div v-if="!!item.children">
                         <span>{{item.title}}</span>

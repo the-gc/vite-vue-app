@@ -17,7 +17,6 @@ export default defineComponent({
     }
 })
 </script>
-
 <style lang="less" scoped>
     @import url('../style/variable.less');
     .block{

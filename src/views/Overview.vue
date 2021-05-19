@@ -1,10 +1,9 @@
 <template>
-    <div class="">
-        首页
-    </div>
+    <v-block title="总览">
+        
+    </v-block>
 </template>
 <script>
-console.log(111);
 export default {
     props: {},
     data() {
